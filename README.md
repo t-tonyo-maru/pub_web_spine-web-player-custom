@@ -12,14 +12,14 @@ Spine エクスポートデータ 3 点（.png, .atlas, .json もしくは .skel
 
 ## URL
 
-### 最新版（spine web playder ver.4.2.5）
+### 最新版
 
-- [ver.4.2.5 | Spine Web Player Custom App](https://t-tonyo-maru.github.io/pub_web_spine-web-player-custom/)
+- [Spine Web Player Custom App | Based on @esotericsoftware/spine-player ver.4.2.5](https://t-tonyo-maru.github.io/pub_web_spine-web-player-custom/)
 
 ### 過去バージョン
 
-- [ver.4.1.20](https://t-tonyo-maru.github.io/pub_web_spine-web-player-custom/4.1.20/)
-- [ver.4.0.28](https://t-tonyo-maru.github.io/pub_web_spine-web-player-custom/4.0.28/)
+- [spine-player ver.4.1.20](https://t-tonyo-maru.github.io/pub_web_spine-web-player-custom/4.1.20/)
+- [spine-player ver.4.0.28](https://t-tonyo-maru.github.io/pub_web_spine-web-player-custom/4.0.28/)
 
 ## 使い方
 
@@ -35,3 +35,15 @@ Spine エクスポートデータ 3 点（.png, .atlas, .json もしくは .skel
 - ファイルのアップロード、Data URL への変換、html ファイルダウンロードまで、すべてブラウザ上で処理を行っています。  
    **アップロードされた Spine エクスポートデータを、他サーバーへ送信等はしておりませんので、ご安心ください。**
 - 上記より、利用者の PC・ブラウザの設定・環境に依存します。本アプリがうまく動作しない場合は、本家の [Spine Web Player](http://ja.esotericsoftware.com/spine-player) をご利用ください。
+
+---
+
+## Build 方法（個人向け）
+
+1. 本番環境変数ファイル（.env.production）を修正する
+   - `REACT_APP_PUBLIC_SPINE_WEB_PLAYER_VERSION`: @esotericsoftware/spine-player のバージョンを入れる
+   - `REACT_APP_PUBLIC_BUILD_TYPE`: 最新版として build する場合は`LATEST`。古いバージョンとして build するなら`OLDER`とする。
+   - `REACT_APP_PUBLIC_BUILD_TYPE`: 最新版として build する場合は`"/pub_web_spine-web-player-custom/"`。古いバージョンとして build するなら`"/pub_web_spine-web-player-custom/{oldversion}/"`とする。
+     - {oldversion}には`REACT_APP_PUBLIC_SPINE_WEB_PLAYER_VERSION`と同じ値を入力する
+2. （※もし古いバージョンとして build したものがあれば、）`src/store/index.tsx` の initialState.oldVersions に追記する
+3. `@esotericsoftware/spine-player`のバージョンを任意のものに固定した上で、インストールする
