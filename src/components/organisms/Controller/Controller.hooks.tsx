@@ -156,7 +156,7 @@ export const useController = () => {
     const isLatestBuild = process.env.REACT_APP_PUBLIC_BUILD_TYPE === 'LATEST'
     const runtimePath = isLatestBuild
       ? `${process.env.REACT_APP_PUBLIC_SITE_PREFIX_PATH}assets/spine-web-player-runtime/${process.env.REACT_APP_PUBLIC_SPINE_WEB_PLAYER_VERSION}/`
-      : `${process.env.REACT_APP_PUBLIC_SITE_PREFIX_PATH}old/${process.env.REACT_APP_PUBLIC_SPINE_WEB_PLAYER_VERSION}/assets/spine-web-player-runtime/${process.env.REACT_APP_PUBLIC_SPINE_WEB_PLAYER_VERSION}/`
+      : `${process.env.REACT_APP_PUBLIC_SITE_PREFIX_PATH}assets/spine-web-player-runtime/${process.env.REACT_APP_PUBLIC_SPINE_WEB_PLAYER_VERSION}/`
 
     const getSpineWebPlayerRuntimeJs = createFetch({
       url: `${runtimePath}spine-player.min.js`
