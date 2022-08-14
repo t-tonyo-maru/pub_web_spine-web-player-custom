@@ -1607,7 +1607,7 @@
   resolved "https://registry.yarnpkg.com/@esotericsoftware/spine-core/-/spine-core-4.2.5.tgz#0a3849f7a0295f1b8b78d4eb9021bca72af291ac"
   integrity sha512-tfkew0B1IPaPvispQQFzhLHOmxQabu5/WaV9B9D0UZuw7p5NLh5J+Sw88LnCjU70+cbFuVVB3s9pzOxvkmptKA==
 
-"@esotericsoftware/spine-player@^4.2.4":
+"@esotericsoftware/spine-player@^4.2.5":
   version "4.2.5"
   resolved "https://registry.yarnpkg.com/@esotericsoftware/spine-player/-/spine-player-4.2.5.tgz#427344d5c05abd8162edff615729fd3bec99d25c"
   integrity sha512-CUyCiRLIsW1BYz3f5fFhPNWu0aG5VsFC6niXQehDZpktzc3FlXnlcZD13QXaHHGct2DolyrSmKReChq4TCpqVw==
