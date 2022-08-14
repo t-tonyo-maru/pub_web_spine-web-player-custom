@@ -46,7 +46,7 @@ export const Controller = memo(() => {
               isDisabled={!globalState.canPlayAnimation}
               isDownload={true}
             >
-              Download
+              Download as HTML
             </Button>
           </div>
         </div>
