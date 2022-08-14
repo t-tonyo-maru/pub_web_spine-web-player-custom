@@ -1,0 +1,32 @@
+@use '../../../styles/config/variables' as *;
+@use '../../../styles/util/mixins/media-query' as *;
+
+.twoColumn {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: $pcContentMaxWidth;
+  padding: 0 $pcGutterWidth;
+  width: 100%;
+
+  @include sp {
+    flex-direction: column;
+    max-width: $spContentMaxWidth;
+    padding: 0;
+  }
+
+  .main {
+    width: $pcTwoColumnLayoutMainMaxWidth;
+    @include sp {
+      width: 100%;
+    }
+  }
+
+  .sidebar {
+    width: $spTwoColumnLayoutSubMaxWidth;
+    @include sp {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@use 'sass:math';
+
+// デザイン上のpx値をvwに変換（$spDesignWidthはconfig/_variable.scssで定義）
+// width: vw(30);
+@function vw($px, $width: $spDesignWidth) {
+  @return math.div($px * 100, $width) * 1vw;
+}

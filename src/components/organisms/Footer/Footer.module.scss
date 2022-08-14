@@ -1,0 +1,7 @@
+@use '../../../styles/config/variables' as *;
+
+.footer {
+  background-color: #333;
+  color: $white;
+  margin-top: auto; // コンテンツの高さがなくとも footer を画面下部に fix させる
+}

@@ -1,0 +1,7 @@
+@use 'sass:math';
+
+// 入力した数値の半分の値をpxで返す
+// width: half(1000); => width: 500px;
+@function half($px) {
+  @return math.div($px, 2)+px;
+}

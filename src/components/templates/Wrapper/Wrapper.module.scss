@@ -1,0 +1,9 @@
+.wrapper {
+  // コンテンツの高さがなくとも footer を画面下部に fix させる
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+}

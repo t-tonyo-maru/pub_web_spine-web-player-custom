@@ -1,0 +1,38 @@
+%text-blur {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  word-wrap: none;
+
+  &::after {
+    background: transparent
+      linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%) 0% 0%
+      no-repeat padding-box;
+    content: '';
+    height: 100%;
+    right: -1px;
+    position: absolute;
+    top: 0;
+    width: 1.65em;
+    z-index: 1;
+  }
+}
+
+%text-blur-gray {
+  @extend %text-blur;
+
+  &::after {
+    background: transparent linear-gradient(90deg, #ebebeb00 0%, #ebebeb 100%)
+      0% 0% no-repeat padding-box;
+  }
+}
+
+%text-blur-dept {
+  @extend %text-blur;
+
+  &::after {
+    background: transparent
+      linear-gradient(90deg, rgba(0, 0, 29, 0) 0%, #00001d 100%) 0% 0% no-repeat
+      padding-box;
+  }
+}

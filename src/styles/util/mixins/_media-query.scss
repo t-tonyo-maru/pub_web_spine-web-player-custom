@@ -1,0 +1,15 @@
+@use '../../config/variables' as *;
+
+// sp
+@mixin sp($max: $spMaxWidth) {
+  @media only screen and (max-width: #{$max}) {
+    @content;
+  }
+}
+
+// pc
+@mixin pc($min: $spMaxWidth + 1px) {
+  @media only screen and (min-width: #{$min}) {
+    @content;
+  }
+}

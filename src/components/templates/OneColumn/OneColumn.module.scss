@@ -1,0 +1,14 @@
+@use '../../../styles/config/variables' as *;
+@use '../../../styles/util/mixins/media-query' as *;
+
+.oneColumn {
+  margin: 0 auto;
+  max-width: $pcContentMaxWidth;
+  padding: 0 $pcGutterWidth;
+  width: 100%;
+
+  @include sp {
+    max-width: $spContentMaxWidth;
+    padding: 0;
+  }
+}

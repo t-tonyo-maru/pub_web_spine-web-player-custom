@@ -1,0 +1,10 @@
+@use '../../../styles/config/variables' as *;
+@use '../../../styles/util/functions/rem' as *;
+
+
+.button {
+  background-color: $white;
+  display: inline-flex;
+  font-weight: bold;
+  font-size: rem($fontSizeMd);
+}

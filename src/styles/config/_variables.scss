@@ -1,0 +1,83 @@
+/********************
+ * カラー
+ ********************/
+// ベーシックカラー / コーポレートカラー
+$white: #ffffff;
+$black: #0a0a0a;
+$lighter: #f5f5f5;
+$darker: #363636;
+$darker02: #7a7a7a;
+$primary: #00d1b2;
+$link: #3273dc;
+$info: #209cee;
+$success: #48c774;
+$warning: #ffdd57;
+$danger: #ff3860;
+$disabled: $darker02;
+// サイト内カラー
+$colorText: $darker;
+$colorText02: $darker02;
+$colorTextWhite: $lighter;
+$colorBorder: $darker;
+$colorBorder02: $darker02;
+
+/********************
+ * フォント
+ ********************/
+// フォントサイズ
+$fontSizeXXXLg: 30; // rem(30)
+$fontSizeXXLg: 24;
+$fontSizeXLg: 20;
+$fontSizeLg: 18;
+$fontSizeMd: 16;
+$fontSizeSm: 14;
+$fontSizeXSm: 12;
+$fontSizeXXSm: 10;
+// フォントファミリー
+$fontFamily: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN',
+  'Hiragino Sans', 'Meiryo', sans-serif;
+
+/********************
+ * ブレイクポイント
+ ********************/
+$spMaxWidth: 767px;
+$tabMinWidth: $spMaxWidth + 1;
+$tabMaxWidth: 1024px;
+
+/********************
+ * コンテンツ幅 / ガーターなど
+ ********************/
+// コンテンツ幅 PC
+$pcContentMaxWidth: 1080px;
+$pcGutterWidth: 20px;
+// コンテンツ幅 SP
+$spContentMaxWidth: 94%;
+$spGutterWidth: calc((100% - #{$spContentMaxWidth}) / 2);
+// ヘッダーの高さ
+$pcHeaderHieght: 65px;
+$spHeaderHieght: 90px;
+// 2カラムレイアウト
+// メインコンテンツ幅
+$pcTwoColumnLayoutMainMaxWidth: 640px;
+// ガーター幅
+$spTwoColumnLayoutGutterWidth: 20px;
+// サブコンテンツ幅
+$spTwoColumnLayoutSubMaxWidth: calc(
+  #{$pcContentMaxWidth} - (#{$pcGutterWidth} * 2) - (#{$pcTwoColumnLayoutMainMaxWidth} +
+        #{$spTwoColumnLayoutGutterWidth})
+);
+
+/********************
+ * 角丸サイズ
+ ********************/
+$borderRadiusSizeXXLg: 18px;
+$borderRadiusSizeXLg: 14px;
+$borderRadiusSizeLg: 10px;
+$borderRadiusSizeMd: 6px;
+$borderRadiusSizeSm: 4px;
+
+/********************
+ * ホバー時 エフェクト
+ ********************/
+$hoverDefaultTransitionTime: 0.3s;
+$hoverDefaultOpacity: 0.7;

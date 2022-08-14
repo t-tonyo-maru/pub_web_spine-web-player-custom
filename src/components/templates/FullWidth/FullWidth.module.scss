@@ -1,0 +1,10 @@
+@use '../../../styles/config/variables' as *;
+@use '../../../styles/util/mixins/media-query' as *;
+
+.fullWidth {
+  width: 100%;
+
+  @include sp {
+    padding: 0;
+  }
+}

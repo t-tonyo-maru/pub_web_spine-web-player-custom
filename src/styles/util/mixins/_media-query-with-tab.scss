@@ -1,0 +1,20 @@
+// sp
+@mixin sp($max: $spMaxWidth) {
+  @media only screen and (max-width: #{$max}) {
+    @content;
+  }
+}
+
+// tablet
+@mixin tab($min: $tabMinWidth, $max: $tabMaxWidth) {
+  @media only screen and (min-width: #{$min}) and (max-width: #{$max}) {
+    @content;
+  }
+}
+
+// pc
+@mixin pc($min: $tabMaxWidth + 1px) {
+  @media only screen and (min-width: #{$min}) {
+    @content;
+  }
+}

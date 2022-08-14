@@ -1,0 +1,10 @@
+@use '../../config/variables' as *;
+
+@mixin hoverEffect($transitionTime: $hoverDefaultTransitionTime, $opacity: $hoverDefaultOpacity) {
+  transition: opacity #{$transitionTime};
+  width: 100%;
+
+  &:hover {
+    opacity: $opacity;
+  }
+}

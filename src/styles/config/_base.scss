@@ -1,0 +1,22 @@
+@use './variables' as *;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $colorText;
+  font-family: $fontFamily;
+  font-feature-settings: 'palt' 1;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
