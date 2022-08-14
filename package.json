@@ -1,7 +1,8 @@
 {
-  "name": "template_react-typescript_spa",
-  "version": "1.8.0",
+  "name": "pub_web_spine-web-player-custom",
+  "version": "0.0.1",
   "private": true,
+  "homepage": "./",
   "engines": {
     "node": "16.x"
   },
@@ -14,6 +15,7 @@
     "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
+    "@esotericsoftware/spine-player": "^4.2.4",
     "classnames": "^2.3.1",
     "ramda": "^0.28.0",
     "react": "^18.2.0",
