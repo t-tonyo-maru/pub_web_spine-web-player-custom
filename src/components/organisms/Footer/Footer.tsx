@@ -20,7 +20,10 @@ const Footer = () => {
             <ul className={style.links}>
               {globalState.oldVersions.map((el) => (
                 <li className={style.linkItem} key={el.id}>
-                  <a href={`https://t-tonyo-maru.github.io/pub_web_spine-web-player-custom/${el.version}/`} className={style.linkText}>
+                  <a
+                    href={`https://t-tonyo-maru.github.io/pub_web_spine-web-player-custom/${el.version}/`}
+                    className={style.linkText}
+                  >
                     ver.{el.version}
                   </a>
                 </li>
@@ -39,8 +42,9 @@ const Footer = () => {
             </li>
           </ul>
         )}
-        <p className={style.appName}>
-          Spine Web Player Custom App: ver.{process.env.REACT_APP_PUBLIC_SPINE_WEB_PLAYER_VERSION}
+        <p className={style.caption}>
+          Based on @esotericsoftware/spine-player ver.
+          {process.env.REACT_APP_PUBLIC_SPINE_WEB_PLAYER_VERSION}
         </p>
       </div>
     </footer>
