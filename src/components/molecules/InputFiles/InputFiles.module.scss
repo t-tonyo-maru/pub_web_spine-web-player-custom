@@ -1,0 +1,18 @@
+@use '../../../styles/config/variables' as *;
+@use '../../../styles/util/functions/rem' as *;
+
+.inputFiles {
+  display: block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}

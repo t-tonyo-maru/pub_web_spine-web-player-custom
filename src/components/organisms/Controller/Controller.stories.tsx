@@ -3,17 +3,17 @@ import React from 'react'
 // module
 import { Story, Meta } from '@storybook/react'
 // components
-import Header from './Header'
+import { Controller } from './Controller'
 
 export default {
-  title: 'organisms/Header',
-  component: Header,
+  title: 'organisms/Controller',
+  component: Controller,
   argTypes: {
     children: { control: 'text' }
   }
 } as Meta
 
-const Template: Story = (args) => <Header {...args} />
+const Template: Story = (args) => <Controller {...args} />
 
 export const Default = Template.bind({})
 Default.args = {}

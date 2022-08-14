@@ -1,7 +1,42 @@
 @use '../../../styles/config/variables' as *;
+@use '../../../styles/util/functions/rem' as *;
 
 .footer {
   background-color: #333;
   color: $white;
   margin-top: auto; // コンテンツの高さがなくとも footer を画面下部に fix させる
+  padding: 20px 8px;
+}
+
+.oldVersion {
+  font-size: rem($fontSizeMd);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.linkItem {
+  margin-left: 16px;
+  &:first-of-type {
+    margin-left: 0;
+  }
+}
+
+.linkText {
+  color: $white;
+  font-size: rem($fontSizeSm);
+  transition: opacity 0.3s;
+  &:hover {
+    opacity: 0.65;
+  }
+}
+
+.appName {
+  border-top: 1px solid $white;
+  font-size: rem($fontSizeXSm);
+  padding-top: 20px;
+  text-align: center;
 }

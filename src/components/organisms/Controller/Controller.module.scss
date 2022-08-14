@@ -1,0 +1,27 @@
+@use '../../../styles/config/variables' as *;
+@use '../../../styles/util/functions/rem' as *;
+
+.controller {
+  margin: 20px auto 40px;
+}
+
+.row {
+  display: flex;
+  margin-top: 12px;
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.loadStatuses {
+  display: flex;
+  margin-left: 40px;
+}
+
+.loadStatus {
+  font-size: rem($fontSizeMd);
+  margin-left: 12px;
+  &:first-of-type {
+    margin-left: 0;
+  }
+}

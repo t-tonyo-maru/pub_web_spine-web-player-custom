@@ -1,10 +1,25 @@
 @use '../../../styles/config/variables' as *;
 @use '../../../styles/util/functions/rem' as *;
 
-
 .button {
-  background-color: $white;
+  background-color: $primary;
+  border: none;
+  border-radius: $borderRadiusSizeMd;
+  color: $white;
   display: inline-flex;
-  font-weight: bold;
   font-size: rem($fontSizeMd);
+  font-weight: bold;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  padding: 0.85em 1em;
+}
+
+.download {
+  background-color: $info;
+}
+
+.disabled {
+  background-color: $disabled;
+  cursor: not-allowed;
+  opacity: 0.75;
 }

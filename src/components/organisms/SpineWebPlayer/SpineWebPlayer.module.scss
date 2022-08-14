@@ -1,0 +1,7 @@
+@use '../../../styles/config/variables' as *;
+
+.container {
+  aspect-ratio: 2/1;
+  background-color: $gray;
+  width: 100%;
+}

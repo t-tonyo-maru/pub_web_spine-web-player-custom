@@ -1,0 +1,37 @@
+@use '../../../styles/config/variables' as *;
+@use '../../../styles/util/functions/rem' as *;
+
+.tag {
+  border: 1px solid $gray;
+  border-radius: $borderRadiusSizeMd;
+  display: flex;
+  font-size: rem($fontSizeSm);
+  line-height: 1;
+}
+
+.extension {
+  padding: 0.35em 0.5em;
+  border-right: 1px solid $gray;
+}
+
+.status {
+  font-weight: bold;
+  padding: 0.35em 0.5em;
+
+  &.isNodata {
+    background-color: $gray;
+    color: $white;
+  }
+  &.isLoading {
+    background-color: lighten($gray, 20%);
+    color: $white;
+  }
+  &.isLoaded {
+    background-color: $success;
+    color: $white;
+  }
+  &.isFailed {
+    background-color: $danger;
+    color: $white;
+  }
+}
