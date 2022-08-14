@@ -16,7 +16,7 @@ const Footer = () => {
       <div>
         {isLatestBuild ? (
           <div>
-            <p className={style.oldVersion}>old versions</p>
+            {globalState.oldVersions.length > 0 && <p className={style.oldVersion}>old versions</p>}
             <ul className={style.links}>
               {globalState.oldVersions.map((el) => (
                 <li className={style.linkItem} key={el.id}>

@@ -58,18 +58,18 @@ const initialState: ModelType = {
     }
   },
   oldVersions: [
-    {
-      id: '4.2.0',
-      version: '4.2.0'
-    },
-    {
-      id: '4.1.0',
-      version: '4.1.0'
-    },
-    {
-      id: '4.0.0',
-      version: '4.0.0'
-    }
+    // {
+    //   id: '4.2.5',
+    //   version: '4.2.5'
+    // },
+    // {
+    //   id: '4.1.20',
+    //   version: '4.1.20'
+    // },
+    // {
+    //   id: '4.0.28',
+    //   version: '4.0.28'
+    // }
   ],
   canPlayAnimation: false,
   userLanguage: 'en'
