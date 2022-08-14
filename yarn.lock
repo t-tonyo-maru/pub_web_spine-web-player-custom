@@ -1602,6 +1602,25 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@esotericsoftware/spine-core@^4.2.5":
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/@esotericsoftware/spine-core/-/spine-core-4.2.5.tgz#0a3849f7a0295f1b8b78d4eb9021bca72af291ac"
+  integrity sha512-tfkew0B1IPaPvispQQFzhLHOmxQabu5/WaV9B9D0UZuw7p5NLh5J+Sw88LnCjU70+cbFuVVB3s9pzOxvkmptKA==
+
+"@esotericsoftware/spine-player@^4.2.4":
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/@esotericsoftware/spine-player/-/spine-player-4.2.5.tgz#427344d5c05abd8162edff615729fd3bec99d25c"
+  integrity sha512-CUyCiRLIsW1BYz3f5fFhPNWu0aG5VsFC6niXQehDZpktzc3FlXnlcZD13QXaHHGct2DolyrSmKReChq4TCpqVw==
+  dependencies:
+    "@esotericsoftware/spine-webgl" "^4.2.5"
+
+"@esotericsoftware/spine-webgl@^4.2.5":
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/@esotericsoftware/spine-webgl/-/spine-webgl-4.2.5.tgz#1d14cea3cae86b7903ea6e4f668184a57433abbf"
+  integrity sha512-gFBfebPR5RZlNnOPdZi8f0Ej0QOI54648f3cm56EYzoKVik4qqmVAo8hN+Lt/KTkyJllinc9JEF9EANXj2IKpQ==
+  dependencies:
+    "@esotericsoftware/spine-core" "^4.2.5"
+
 "@gar/promisify@^1.0.1":
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
