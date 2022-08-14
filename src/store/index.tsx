@@ -59,10 +59,6 @@ const initialState: ModelType = {
   },
   oldVersions: [
     // {
-    //   id: '4.2.5',
-    //   version: '4.2.5'
-    // },
-    // {
     //   id: '4.1.20',
     //   version: '4.1.20'
     // },
