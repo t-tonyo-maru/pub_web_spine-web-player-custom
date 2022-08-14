@@ -20,7 +20,7 @@ const Footer = () => {
             <ul className={style.links}>
               {globalState.oldVersions.map((el) => (
                 <li className={style.linkItem} key={el.id}>
-                  <a href={`/old/${el.version}/`} className={style.linkText}>
+                  <a href={`https://t-tonyo-maru.github.io/pub_web_spine-web-player-custom/${el.version}/`} className={style.linkText}>
                     ver.{el.version}
                   </a>
                 </li>
@@ -30,7 +30,10 @@ const Footer = () => {
         ) : (
           <ul>
             <li className={style.linkItem}>
-              <a href="/" className={style.linkText}>
+              <a
+                href="https://t-tonyo-maru.github.io/pub_web_spine-web-player-custom/"
+                className={style.linkText}
+              >
                 back to latest version
               </a>
             </li>
