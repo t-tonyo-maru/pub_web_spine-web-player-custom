@@ -30,7 +30,10 @@ const Footer = () => {
         ) : (
           <ul>
             <li className={style.linkItem}>
-              <a href="/" className={style.linkText}>
+              <a
+                href="https://t-tonyo-maru.github.io/pub_web_spine-web-player-custom/"
+                className={style.linkText}
+              >
                 back to latest version
               </a>
             </li>
