@@ -6,7 +6,7 @@
 Web ページ上で Spine アニメーションのプレビュー。および、一枚の html へ変換してダウンロードできます。
 
 Spine エクスポートデータ 3 点（.png, .atlas, .json もしくは .skel）をアップロードすると、Web ページにてプレビューが表示されます。  
-「Download as HTML」ボタンを押下すると、Spine エクスポートデータ 3 点を Data URL に変換した上で、Spine Web Player の css/js と取りまとめて、1 枚の html としてダウンロードできます。  
+「Download as HTML」ボタンを押下すると、Spine エクスポートデータ 3 点を データ URI に変換した上で、Spine Web Player の css/js と取りまとめて、1 枚の html としてダウンロードできます。  
 Spine 本体を持っていない人でも、ダウンロードした html があれば、Web ブラウザで Spine アニメーションを再生・確認できます。  
 また、html を Web サーバーにアップロードすれば簡単にアニメーションを公開できます。追加の css/js は不要です。
 
@@ -17,7 +17,7 @@ This application previews Spine animation on the web page. and convert it to a s
 
 Upload 3 Spine export data (.png, .atlas, .json or .skel) and you will see a preview on the web page.  
 Click the "Download as HTML" button to download the data as a single html file.  
-The html file contains a string of three Spine export data points converted to a Data URL and the css/js of the Spine Web Player.
+The html file contains a string of three Spine export data points converted to a Data URI and the css/js of the Spine Web Player.
 
 Even if you do not have the Spine editor itself, you can play and check Spine animations with a Web browser as long as you have the downloaded html.  
 You can also easily publish your animation by uploading the html to your web server.  
@@ -56,13 +56,13 @@ No additional css/js is required.
 
 ## 特記事項（Special note）
 
-- ファイルのアップロード、Data URL への変換、html ファイルダウンロード等の処理は、すべてブラウザ上で処理を行っています。  
-   **アップロードされた Spine エクスポートデータを、他サーバーへ送信したりなどはありません。ご安心ください。**
+- ファイルのアップロード、データ URI への変換、html ファイルダウンロード等の処理は、すべて利用者のブラウザ上でのみ実行されます。  
+   **アップロードされた Spine エクスポートデータを、他サーバーへ送信したりなどはありませんので、ご安心ください。**
 - 上記より、利用者の PC・ブラウザの設定・環境に依存します。本アプリがうまく動作しない場合は、本家の [Spine Web Player](http://ja.esotericsoftware.com/spine-player) をご利用ください。
 
 ---
 
-- File upload, conversion to Data URL, html file download, and other processes are all completed in the browser.  
+- File upload, conversion to Data URI, html file download, and other processes are all completed in the browser.  
    **Uploaded Spine export data is not sent to other servers. Please rest assured.**
 - From the above, it depends on the user's PC and browser settings and environment.  
    If this application does not work well, please use the [original Spine Web Player](http://ja.esotericsoftware.com/spine-player).
