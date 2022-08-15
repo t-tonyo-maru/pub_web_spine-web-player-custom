@@ -8,14 +8,25 @@
   padding: 20px 8px;
 }
 
+.block {
+  padding: 20px 0;
+  border-top: 1px solid $white;
+  &:first-of-type {
+    padding-top: 0;
+    border-top: none;
+  }
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
 .oldVersion {
-  font-size: rem($fontSizeMd);
+  font-size: rem($fontSizeSm);
 }
 
 .links {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 20px;
 }
 
 .linkItem {
@@ -27,7 +38,7 @@
 
 .linkText {
   color: $white;
-  font-size: rem($fontSizeSm);
+  font-size: rem($fontSizeMd);
   transition: opacity 0.3s;
   &:hover {
     opacity: 0.65;
@@ -35,9 +46,6 @@
 }
 
 .caption {
-  border-top: 1px solid $white;
   font-size: rem($fontSizeXSm);
-  margin-top: 10px;
-  padding-top: 20px;
   text-align: center;
 }
