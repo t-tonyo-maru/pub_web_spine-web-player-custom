@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <footer className={style.footer}>
-      <div>
+      <div className={style.block}>
         {isLatestBuild ? (
           <div>
             {globalState.oldVersions.length > 0 && <p className={style.oldVersion}>old versions</p>}
@@ -31,7 +31,7 @@ const Footer = () => {
             </ul>
           </div>
         ) : (
-          <ul>
+          <ul className={style.links}>
             <li className={style.linkItem}>
               <a
                 href="https://t-tonyo-maru.github.io/pub_web_spine-web-player-custom/"
@@ -42,6 +42,34 @@ const Footer = () => {
             </li>
           </ul>
         )}
+      </div>
+
+      <div className={style.block}>
+        <ul className={style.links}>
+          <li className={style.linkItem}>
+            <a
+              href="https://github.com/t-tonyo-maru/pub_web_spine-web-player-custom/blob/main/README.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={style.linkText}
+            >
+              &gt; How to use
+            </a>
+          </li>
+          <li className={style.linkItem}>
+            <a
+              href="https://github.com/t-tonyo-maru/pub_web_spine-web-player-custom"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={style.linkText}
+            >
+              &gt; Github Repository
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div className={style.block}>
         <p className={style.caption}>
           Based on @esotericsoftware/spine-player ver.
           {process.env.REACT_APP_PUBLIC_SPINE_WEB_PLAYER_VERSION}
