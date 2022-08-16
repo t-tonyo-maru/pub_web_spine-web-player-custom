@@ -30,6 +30,7 @@ export const useSpineWebPlayer = () => {
     }
 
     const spinePlayerOptions: spine.SpinePlayerConfig = {
+      premultipliedAlpha: true,
       preserveDrawingBuffer: false,
       atlasUrl: `${globalState.files.atlas.fileName}`,
       rawDataURIs: {

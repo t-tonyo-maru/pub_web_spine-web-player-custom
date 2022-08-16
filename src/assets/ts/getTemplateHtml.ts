@@ -35,6 +35,7 @@ export const getTemplateHtml = ({
       <script>${runtimeJs}</script>
       <script>
       new spine.SpinePlayer("player-container", {
+        premultipliedAlpha: true,
         preserveDrawingBuffer: false,
         ${coreUrlOption}: "${core.fileName}",
         atlasUrl: "${atlas.fileName}",
