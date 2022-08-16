@@ -59,8 +59,11 @@ No additional css/js is required.
 - ファイルのアップロード、データ URI への変換、html ファイルダウンロード等の処理は、すべて利用者のブラウザ上でのみ実行されます。  
    **アップロードされた Spine エクスポートデータを、他サーバーへ送信したりなどはありませんので、ご安心ください。**
 - 上記より、利用者の PC・ブラウザの設定・環境に依存します。本アプリがうまく動作しない場合は、本家の [Spine Web Player](http://ja.esotericsoftware.com/spine-player) をご利用ください。
-- Spine Web Player の乗算済みアルファ（`premultipliedAlpha`）オプションは、`true`を指定しています。  
-   Web ページ上のプレビュー、および、ダウンロードされる HTML のどちらでも`true`です。
+- Spine Web Player の乗算済みアルファ（`premultipliedAlpha`）オプションは、`true`を指定しています。（Web ページ上のプレビュー、および、ダウンロードされる HTML のどちらでも`true`です。）  
+  本アプリでは、パック設定の「乗算済みアルファ」にチェックして、エクスポートしたデータをご利用ください。（パック設定の「乗算済みアルファ」はデフォルトでチェックが入っていますので、基本的にそのままエクスポートすれば問題ないかと思います。）
+  - 参考リンク
+    - [> テクスチャパッキング 出力](http://ja.esotericsoftware.com/spine-texture-packer#%E5%87%BA%E5%8A%9B%28Output%29)
+    - [> Spine Web Player 乗算済みアルファ](http://ja.esotericsoftware.com/spine-player#%E4%B9%97%E7%AE%97%E6%B8%88%E3%81%BF%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1)
 
 ---
 
@@ -69,7 +72,12 @@ No additional css/js is required.
 - From the above, it depends on the user's PC and browser settings and environment.  
    If this application does not work well, please use the [original Spine Web Player](http://ja.esotericsoftware.com/spine-player).
 - Spine Web Player's `premultipliedAlpha` option is set to `true`.  
-   It is `true` both in the preview on the web page and in the HTML that is downloaded.
+  It is `true` both in the preview on the web page and in the HTML that is downloaded.  
+  Please check "Premultiply alpha" in the pack settings to use exported data in this application.  
+  Since "Premultiply alpha" in the pack settings is checked by default, it is basically fine to export as is.
+  - links
+    - [> Texture packing Output](http://esotericsoftware.com/spine-texture-packer)
+    - [> Spine Web Player Premultiplied alpha](http://esotericsoftware.com/spine-player#Premultiplied-alpha)
 
 ## 開発者の個人的メモ（Developer's personal note）
 
