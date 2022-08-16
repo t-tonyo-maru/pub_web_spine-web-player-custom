@@ -59,8 +59,11 @@ No additional css/js is required.
 - ファイルのアップロード、データ URI への変換、html ファイルダウンロード等の処理は、すべて利用者のブラウザ上でのみ実行されます。  
    **アップロードされた Spine エクスポートデータを、他サーバーへ送信したりなどはありませんので、ご安心ください。**
 - 上記より、利用者の PC・ブラウザの設定・環境に依存します。本アプリがうまく動作しない場合は、本家の [Spine Web Player](http://ja.esotericsoftware.com/spine-player) をご利用ください。
-- Spine Web Player の乗算済みアルファ（`premultipliedAlpha`）オプションは、`true`を指定しています。  
-   Web ページ上のプレビュー、および、ダウンロードされる HTML のどちらでも`true`です。
+- Spine Web Player の乗算済みアルファ（`premultipliedAlpha`）オプションは、`true`を指定しています。（Web ページ上のプレビュー、および、ダウンロードされる HTML のどちらでも`true`です。）  
+  本アプリでは、パック設定の「乗算済みアルファ」にチェックして、エクスポートしたデータをご利用ください。（パック設定の「乗算済みアルファ」はデフォルトでチェックが入っていますので、基本的にそのままエクスポートすれば問題ないかと思います。）
+  - 参考リンク
+    - [> テクスチャパッキング 出力](http://ja.esotericsoftware.com/spine-texture-packer#%E5%87%BA%E5%8A%9B%28Output%29)
+    - [> Spine Web Player 乗算済みアルファ](http://ja.esotericsoftware.com/spine-player#%E4%B9%97%E7%AE%97%E6%B8%88%E3%81%BF%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1)
 
 ---
 
@@ -69,7 +72,12 @@ No additional css/js is required.
 - From the above, it depends on the user's PC and browser settings and environment.  
    If this application does not work well, please use the [original Spine Web Player](http://ja.esotericsoftware.com/spine-player).
 - Spine Web Player's `premultipliedAlpha` option is set to `true`.  
-   It is `true` both in the preview on the web page and in the HTML that is downloaded.
+  It is `true` both in the preview on the web page and in the HTML that is downloaded.  
+  Please check "Premultiply alpha" in the pack settings to use exported data in this application.  
+  Since "Premultiply alpha" in the pack settings is checked by default, it is basically fine to export as is.
+  - links
+    - [> Texture packing Output](http://esotericsoftware.com/spine-texture-packer)
+    - [> Spine Web Player Premultiplied alpha](http://esotericsoftware.com/spine-player#Premultiplied-alpha)
 
 ## 開発者の個人的メモ（Developer's personal note）
 
@@ -94,7 +102,8 @@ The following are personal notes from the developer.
    - 最新版として build した場合は、/docs 直下に格納する
    - 古いバージョンとして build した場合は、/docs/{oldVersion}/配下に格納する
 7. /docs から不要なファイルを削除する
-   - **html ダウンロード機能で取得する css/js は、`docs/assets/spine-web-player-runtime/` 配下に格納されています。**  
-      （URL で表すとhttps://t-tonyo-maru.github.io/pub_web_spine-web-player-custom/assets/spine-web-player-runtime/{version}/）  
-      **`docs/assets/spine-web-player-runtime` 配下の css/js は削除しないこと！**  
-      その代わりに、docs/配下の過去バージョンディレクトリの css/js は削除しても問題ない
+   - **html ダウンロード機能で取得する css/js は、`xxx/assets/spine-web-player-runtime/` 配下に格納される**  
+      各バージョンの**`/assets/spine-web-player-runtime/{該当バージョン}/` 配下の css/js は削除しないこと**  
+      バージョン違いのディレクトリであれば、削除して OK。  
+      例: 4.0.28/ 配下なら…、`/docs/4.0.28/assets/spine-web-player-runtime/4.0.28/`に該当バージョンの css/js を入れる。他バージョンのは削除して OK。  
+      最新版なら…、`/docs/assets/spine-web-player-runtime/{latestVersion}`に最新バージョンの css/js を入れる。他バージョンのは削除して OK。
