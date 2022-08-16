@@ -59,6 +59,8 @@ No additional css/js is required.
 - ファイルのアップロード、データ URI への変換、html ファイルダウンロード等の処理は、すべて利用者のブラウザ上でのみ実行されます。  
    **アップロードされた Spine エクスポートデータを、他サーバーへ送信したりなどはありませんので、ご安心ください。**
 - 上記より、利用者の PC・ブラウザの設定・環境に依存します。本アプリがうまく動作しない場合は、本家の [Spine Web Player](http://ja.esotericsoftware.com/spine-player) をご利用ください。
+- Spine Web Player の乗算済みアルファ（`premultipliedAlpha`）オプションは、`true`を指定しています。  
+   Web ページ上のプレビュー、および、ダウンロードされる HTML のどちらでも`true`です。
 
 ---
 
@@ -66,6 +68,8 @@ No additional css/js is required.
    **Uploaded Spine export data is not sent to other servers. Please rest assured.**
 - From the above, it depends on the user's PC and browser settings and environment.  
    If this application does not work well, please use the [original Spine Web Player](http://ja.esotericsoftware.com/spine-player).
+- Spine Web Player's `premultipliedAlpha` option is set to `true`.  
+   It is `true` both in the preview on the web page and in the HTML that is downloaded.
 
 ## 開発者の個人的メモ（Developer's personal note）
 
