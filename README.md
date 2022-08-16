@@ -94,7 +94,8 @@ The following are personal notes from the developer.
    - 最新版として build した場合は、/docs 直下に格納する
    - 古いバージョンとして build した場合は、/docs/{oldVersion}/配下に格納する
 7. /docs から不要なファイルを削除する
-   - **html ダウンロード機能で取得する css/js は、`docs/assets/spine-web-player-runtime/` 配下に格納されています。**  
-      （URL で表すとhttps://t-tonyo-maru.github.io/pub_web_spine-web-player-custom/assets/spine-web-player-runtime/{version}/）  
-      **`docs/assets/spine-web-player-runtime` 配下の css/js は削除しないこと！**  
-      その代わりに、docs/配下の過去バージョンディレクトリの css/js は削除しても問題ない
+   - **html ダウンロード機能で取得する css/js は、`xxx/assets/spine-web-player-runtime/` 配下に格納される**  
+      各バージョンの**`/assets/spine-web-player-runtime/{該当バージョン}/` 配下の css/js は削除しないこと**  
+      バージョン違いのディレクトリであれば、削除して OK。  
+      例: 4.0.28/ 配下なら…、`/docs/4.0.28/assets/spine-web-player-runtime/4.0.28/`に該当バージョンの css/js を入れる。他バージョンのは削除して OK。  
+      最新版なら…、`/docs/assets/spine-web-player-runtime/{latestVersion}`に最新バージョンの css/js を入れる。他バージョンのは削除して OK。
